@@ -2,10 +2,15 @@
   "paragraphs": [
     {
       "title": "",
-      "text": "print(\u0027\u0027\u0027%html\\n\u003ch1 style\u003d\"background-color: #673191; color: white; text-align: center\"\u003e\u003cb\u003eSetup and Access Data\u003c/b\u003e\u003c/h1\u003e\u0027\u0027\u0027)",
+      "text": "\u003ch1 style\u003d\"background-color: #673191; color: white; text-align: center\"\u003e\u003cb\u003eSetup and Access Data\u003c/b\u003e\u003c/h1\u003e",
       "user": "",
-      "dateUpdated": "2020-06-10 04:51:16.000",
+      "dateUpdated": "2020-06-10 17:29:52.000",
       "config": {
+        "tableHide": false,
+        "editorSetting": {
+          "language": "markdown",
+          "editOnDblClick": true
+        },
         "selectedInterpreter": {
           "name": "python",
           "profile": "python",
@@ -16,11 +21,9 @@
         },
         "colWidth": 12.0,
         "editorHide": true,
-        "results": [],
-        "editorSetting": {
-          "language": "python",
-          "editOnDblClick": false
-        }
+        "results": [
+          {}
+        ]
       },
       "settings": {
         "params": {},
@@ -30,7 +33,7 @@
         "code": "SUCCESS",
         "msg": [
           {
-            "data": "\u003ch1 style\u003d\"background-color: #673191; color: white; text-align: center\"\u003e\u003cb\u003eSetup and Access Data\u003c/b\u003e\u003c/h1\u003e\n",
+            "data": "\u003cdiv class\u003d\"markdown-body\"\u003e\n\u003ch1 style\u003d\"background-color: #673191; color: white; text-align: center\"\u003e\u003cb\u003eSetup and Access Data\u003c/b\u003e\u003c/h1\u003e\n\u003c/div\u003e",
             "type": "HTML"
           }
         ]
@@ -39,8 +42,8 @@
       "jobName": "",
       "id": "20200609-065309_803813807",
       "dateCreated": "2020-06-09 06:53:09.000",
-      "dateStarted": "2020-06-10 04:51:08.735",
-      "dateFinished": "2020-06-10 04:51:16.864",
+      "dateStarted": "2020-06-10 17:29:52.106",
+      "dateFinished": "2020-06-10 17:29:52.107",
       "status": "FINISHED",
       "errorMessage": "",
       "progressUpdateIntervalMs": 0
@@ -49,7 +52,7 @@
       "title": "Install Library",
       "text": "%python\n\n!pip install -U imbalanced-learn\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n",
       "user": "",
-      "dateUpdated": "2020-06-10 13:59:37.000",
+      "dateUpdated": "2020-06-10 17:30:11.000",
       "config": {
         "tableHide": true,
         "editorSetting": {
@@ -99,8 +102,8 @@
       "jobName": "",
       "id": "20200609-065309_997890627",
       "dateCreated": "2020-06-09 06:53:09.000",
-      "dateStarted": "2020-06-10 13:24:59.796",
-      "dateFinished": "2020-06-10 13:25:07.308",
+      "dateStarted": "2020-06-10 17:19:10.641",
+      "dateFinished": "2020-06-10 17:19:11.750",
       "status": "FINISHED",
       "errorMessage": "",
       "progressUpdateIntervalMs": 0
@@ -109,7 +112,7 @@
       "title": "Import Libraries",
       "text": "%python\n\nimport pandas as pd\nimport seaborn as sns\nimport matplotlib.pyplot as plt\nimport numpy as np\nfrom sklearn.model_selection import train_test_split\nfrom sklearn.metrics import classification_report\nfrom sklearn.metrics import confusion_matrix\nfrom sklearn.metrics import accuracy_score\nfrom keras.models import Sequential\nfrom keras.layers import Dense\nfrom sklearn.metrics import accuracy_score\n\nimport imblearn\nfrom imblearn.over_sampling import SMOTE\n\nimport snowflake.connector\n",
       "user": "",
-      "dateUpdated": "2020-06-10 13:59:35.000",
+      "dateUpdated": "2020-06-10 17:30:13.000",
       "config": {
         "tableHide": true,
         "editorSetting": {
@@ -154,8 +157,8 @@
       "jobName": "",
       "id": "20200609-065309_733006554",
       "dateCreated": "2020-06-09 06:53:09.000",
-      "dateStarted": "2020-06-10 13:25:18.696",
-      "dateFinished": "2020-06-10 13:25:20.206",
+      "dateStarted": "2020-06-10 17:19:11.751",
+      "dateFinished": "2020-06-10 17:19:11.806",
       "status": "FINISHED",
       "errorMessage": "",
       "progressUpdateIntervalMs": 0
@@ -164,7 +167,7 @@
       "title": "Interactive Notebook Inputs",
       "text": "%python\n# Set datasource name to be used as a variable in future paragraphs\ndatasource \u003d z.textbox(\"Data Source Name\",\"LAB_01\")\n\n# Create an input field to select from different tables\ntable \u003d z.textbox(\"Database Table Name\", \"ANOMALY_DETECTION\")\n                                \nprint(\"Datasource:\", datasource) \nprint(\"Database Table:\", table)\n                                ",
       "user": "",
-      "dateUpdated": "2020-06-10 13:25:22.000",
+      "dateUpdated": "2020-06-10 17:19:11.000",
       "config": {
         "tableHide": false,
         "editorSetting": {
@@ -218,8 +221,8 @@
       "jobName": "",
       "id": "20200609-065309_957537872",
       "dateCreated": "2020-06-09 06:53:09.000",
-      "dateStarted": "2020-06-10 13:25:22.359",
-      "dateFinished": "2020-06-10 13:25:22.419",
+      "dateStarted": "2020-06-10 17:19:11.808",
+      "dateFinished": "2020-06-10 17:19:11.863",
       "status": "FINISHED",
       "errorMessage": "",
       "progressUpdateIntervalMs": 0
@@ -228,7 +231,7 @@
       "title": "Connect to Snowflake (hard coded)",
       "text": "%python\ncon \u003d snowflake.connector.connect(\n  account\u003d\"zepl_partner\",\n  warehouse\u003d\"LAB_WH\",\n  database\u003d\"CUSTOMER_LABS\",\n  schema\u003d\"LAB_01\",\n  \n  user\u003d\"LAB_USER\",\n  password\u003d\"zepL_lab_User\",\n  role\u003d\"LAB_ROLE\"\n)\n\ncur \u003d con.cursor()\n",
       "user": "",
-      "dateUpdated": "2020-06-10 13:59:40.000",
+      "dateUpdated": "2020-06-10 17:30:16.000",
       "config": {
         "selectedInterpreter": {
           "name": "python",
@@ -256,8 +259,8 @@
       "jobName": "",
       "id": "20200609-235903_1012759828",
       "dateCreated": "2020-06-09 23:59:03.000",
-      "dateStarted": "2020-06-10 13:25:25.089",
-      "dateFinished": "2020-06-10 13:25:25.596",
+      "dateStarted": "2020-06-10 17:19:11.865",
+      "dateFinished": "2020-06-10 17:19:12.371",
       "status": "FINISHED",
       "errorMessage": "",
       "progressUpdateIntervalMs": 0
@@ -266,7 +269,7 @@
       "title": "Connect to Snowflake (Zepl)",
       "text": "%python\n\n# Create connection to Snowflake and return a SnowflakeCursor object\ncur \u003d z.getDatasource(datasource)\n\n\n\n\n\n\n\n",
       "user": "",
-      "dateUpdated": "2020-06-10 13:59:43.000",
+      "dateUpdated": "2020-06-10 17:30:19.000",
       "config": {
         "selectedInterpreter": {
           "name": "python",
@@ -294,9 +297,9 @@
       "jobName": "",
       "id": "20200610-000342_17025014",
       "dateCreated": "2020-06-10 00:03:42.000",
-      "dateStarted": "2020-06-10 13:25:28.114",
-      "dateFinished": "2020-06-10 13:25:28.170",
-      "status": "FINISHED",
+      "dateStarted": "2020-06-10 17:19:12.373",
+      "dateFinished": "2020-06-10 17:19:12.428",
+      "status": "ERROR",
       "errorMessage": "",
       "progressUpdateIntervalMs": 0
     },
@@ -304,7 +307,7 @@
       "title": "Run Query on Snowflake Data",
       "text": "%python\n\n# Create SQL to push down to Snowflake\nsql \u003d \u0027SELECT * FROM \u0027 + table\n\n# Execute SQL in Snowflake\nres \u003d cur.execute(sql)\n\n# Return results into a Pandas DataFrame\ndf \u003d pd.DataFrame(res)\ndf.columns \u003d [col[0] for col in cur.description]\n\ndf.shape",
       "user": "",
-      "dateUpdated": "2020-06-10 13:59:46.000",
+      "dateUpdated": "2020-06-10 17:30:23.000",
       "config": {
         "tableHide": false,
         "editorSetting": {
@@ -11633,8 +11636,8 @@
       "jobName": "",
       "id": "20200609-065309_883332306",
       "dateCreated": "2020-06-09 06:53:09.000",
-      "dateStarted": "2020-06-10 13:25:33.105",
-      "dateFinished": "2020-06-10 13:25:42.981",
+      "dateStarted": "2020-06-10 17:19:12.433",
+      "dateFinished": "2020-06-10 17:19:18.548",
       "status": "FINISHED",
       "errorMessage": "",
       "progressUpdateIntervalMs": 0
@@ -11643,7 +11646,7 @@
       "title": "Display Query Results",
       "text": "%python\n\n# Display results\nz.show(df)",
       "user": "",
-      "dateUpdated": "2020-06-10 13:59:48.000",
+      "dateUpdated": "2020-06-10 17:30:26.000",
       "config": {
         "selectedInterpreter": {
           "name": "python",
@@ -23204,8 +23207,8 @@
       "jobName": "",
       "id": "20200610-000519_276231567",
       "dateCreated": "2020-06-10 00:05:19.000",
-      "dateStarted": "2020-06-10 13:25:46.722",
-      "dateFinished": "2020-06-10 13:25:46.809",
+      "dateStarted": "2020-06-10 17:19:18.554",
+      "dateFinished": "2020-06-10 17:19:18.629",
       "status": "FINISHED",
       "errorMessage": "",
       "progressUpdateIntervalMs": 0
@@ -23214,7 +23217,7 @@
       "title": "In case of emergency break glass",
       "text": "%python\nurl \u003d \"http://zdata/LAB_01_DATA.csv\"\ndf \u003d pd.read_csv(url)",
       "user": "",
-      "dateUpdated": "2020-06-10 13:59:52.000",
+      "dateUpdated": "2020-06-10 17:30:28.000",
       "config": {
         "tableHide": true,
         "editorSetting": {
@@ -23244,8 +23247,8 @@
       "jobName": "",
       "id": "20200610-134253_1596945386",
       "dateCreated": "2020-06-10 13:42:53.000",
-      "dateStarted": "2020-06-10 13:46:44.479",
-      "dateFinished": "2020-06-10 13:46:45.390",
+      "dateStarted": "2020-06-10 17:19:18.635",
+      "dateFinished": "2020-06-10 17:19:19.143",
       "status": "ERROR",
       "errorMessage": "",
       "progressUpdateIntervalMs": 0
@@ -23254,7 +23257,7 @@
       "title": "",
       "text": "%python\nprint(\u0027\u0027\u0027%html\\n\u003ch1 style\u003d\"background-color: #673191; color: white; text-align: center\"\u003e\u003cb\u003eVisualize Data\u003c/b\u003e\u003c/h1\u003e\u0027\u0027\u0027)",
       "user": "",
-      "dateUpdated": "2020-06-10 04:51:38.000",
+      "dateUpdated": "2020-06-10 17:19:19.000",
       "config": {
         "selectedInterpreter": {
           "name": "python",
@@ -23291,8 +23294,8 @@
       "jobName": "",
       "id": "20200609-065309_2051069023",
       "dateCreated": "2020-06-09 06:53:09.000",
-      "dateStarted": "2020-06-10 04:51:38.002",
-      "dateFinished": "2020-06-10 04:51:38.127",
+      "dateStarted": "2020-06-10 17:19:19.145",
+      "dateFinished": "2020-06-10 17:19:19.252",
       "status": "FINISHED",
       "errorMessage": "",
       "progressUpdateIntervalMs": 0
@@ -23301,7 +23304,7 @@
       "title": "Handle NULL Values",
       "text": "%python\n# Remove NULL Values from our dataset\ndf.drop(\u0027NAMEORIG\u0027, axis\u003d1, inplace\u003dTrue)\ndf.drop(\u0027NAMEDEST\u0027, axis\u003d1, inplace\u003dTrue)\ndf.drop(\u0027ISFLAGGEDFRAUD\u0027, axis\u003d1, inplace\u003dTrue)\n\nprint(\u0027Null Values \u003d\u0027,df.isnull().values.any())",
       "user": "",
-      "dateUpdated": "2020-06-10 13:59:54.000",
+      "dateUpdated": "2020-06-10 17:30:31.000",
       "config": {
         "tableHide": false,
         "editorSetting": {
@@ -23331,8 +23334,8 @@
       "jobName": "",
       "id": "20200609-065309_1045434622",
       "dateCreated": "2020-06-09 06:53:09.000",
-      "dateStarted": "2020-06-10 13:25:52.819",
-      "dateFinished": "2020-06-10 13:25:53.179",
+      "dateStarted": "2020-06-10 17:19:19.254",
+      "dateFinished": "2020-06-10 17:19:19.660",
       "status": "FINISHED",
       "errorMessage": "",
       "progressUpdateIntervalMs": 0
@@ -23341,7 +23344,7 @@
       "title": "Build Interactive Charts with only one line of code",
       "text": "%python\n\nz.show(df)\n\n\n\n\n\n",
       "user": "",
-      "dateUpdated": "2020-06-10 13:59:56.000",
+      "dateUpdated": "2020-06-10 17:30:44.000",
       "config": {
         "tableHide": false,
         "editorSetting": {
@@ -23354,7 +23357,7 @@
           "isCustom": false,
           "editorLanguage": "python",
           "className": "org.apache.zeppelin.python.PythonInterpreter",
-          "isDefault": true
+          "isDefault": false
         },
         "colWidth": 6.0,
         "editorHide": false,
@@ -23377,10 +23380,10 @@
                   "aggr": "sum"
                 }
               ],
-              "mode": "nivo-pie-chart",
+              "mode": "table",
               "version": "zepl",
               "height": 300.0,
-              "optionOpen": false,
+              "optionOpen": true,
               "setting": {
                 "nivo-column-chart": {
                   "axis": {
@@ -23567,27 +23570,9 @@
                   },
                   "common": {
                     "pivot": {
-                      "keys": [
-                        {
-                          "name": "TYPE",
-                          "index": 2.0,
-                          "aggr": "sum"
-                        }
-                      ],
-                      "values": [
-                        {
-                          "name": "TYPE",
-                          "index": 2.0,
-                          "aggr": "sum"
-                        }
-                      ],
-                      "groups": [
-                        {
-                          "name": "ISFRAUD",
-                          "index": 8.0,
-                          "aggr": "sum"
-                        }
-                      ]
+                      "keys": [],
+                      "values": [],
+                      "groups": []
                     }
                   },
                   "parameterChanged": false,
@@ -25885,101 +25870,29 @@
                 "nivo-pie-chart": {
                   "axis": {
                     "pie": {
-                      "category": [
-                        {
-                          "name": "TYPE",
-                          "index": 2.0,
-                          "aggr": "sum"
-                        }
-                      ],
-                      "value": [
-                        {
-                          "name": "TYPE",
-                          "index": 2.0,
-                          "aggr": "sum"
-                        }
-                      ],
-                      "drill-down": [
-                        {
-                          "name": "ISFRAUD",
-                          "index": 8.0,
-                          "aggr": "sum"
-                        }
-                      ]
+                      "category": [],
+                      "value": [],
+                      "drill-down": []
                     },
                     "donut": {
-                      "category": [
-                        {
-                          "name": "TYPE",
-                          "index": 2.0,
-                          "aggr": "sum"
-                        }
-                      ],
-                      "value": [
-                        {
-                          "name": "TYPE",
-                          "index": 2.0,
-                          "aggr": "sum"
-                        }
-                      ],
-                      "drill-down": [
-                        {
-                          "name": "ISFRAUD",
-                          "index": 8.0,
-                          "aggr": "sum"
-                        }
-                      ]
+                      "category": [],
+                      "value": [],
+                      "drill-down": []
                     },
                     "half-donut": {
-                      "category": [
-                        {
-                          "name": "TYPE",
-                          "index": 2.0,
-                          "aggr": "sum"
-                        }
-                      ],
-                      "value": [
-                        {
-                          "name": "TYPE",
-                          "index": 2.0,
-                          "aggr": "sum"
-                        }
-                      ],
-                      "drill-down": [
-                        {
-                          "name": "ISFRAUD",
-                          "index": 8.0,
-                          "aggr": "sum"
-                        }
-                      ]
+                      "category": [],
+                      "value": [],
+                      "drill-down": []
                     }
                   },
                   "panel": {
-                    "columnPanelOpened": true,
+                    "columnPanelOpened": false,
                     "parameterPanelOpened": false
                   },
                   "sharedAxis": {
-                    "category": [
-                      {
-                        "name": "TYPE",
-                        "index": 2.0,
-                        "aggr": "sum"
-                      }
-                    ],
-                    "value": [
-                      {
-                        "name": "TYPE",
-                        "index": 2.0,
-                        "aggr": "sum"
-                      }
-                    ],
-                    "drill-down": [
-                      {
-                        "name": "ISFRAUD",
-                        "index": 8.0,
-                        "aggr": "sum"
-                      }
-                    ]
+                    "category": [],
+                    "value": [],
+                    "drill-down": []
                   },
                   "parameter": {
                     "pie": {
@@ -26088,27 +26001,9 @@
                   },
                   "common": {
                     "pivot": {
-                      "keys": [
-                        {
-                          "name": "TYPE",
-                          "index": 2.0,
-                          "aggr": "sum"
-                        }
-                      ],
-                      "values": [
-                        {
-                          "name": "TYPE",
-                          "index": 2.0,
-                          "aggr": "sum"
-                        }
-                      ],
-                      "groups": [
-                        {
-                          "name": "ISFRAUD",
-                          "index": 8.0,
-                          "aggr": "sum"
-                        }
-                      ]
+                      "keys": [],
+                      "values": [],
+                      "groups": []
                     }
                   },
                   "parameterChanged": false,
@@ -27679,27 +27574,9 @@
                   },
                   "common": {
                     "pivot": {
-                      "keys": [
-                        {
-                          "name": "TYPE",
-                          "index": 2.0,
-                          "aggr": "sum"
-                        }
-                      ],
-                      "values": [
-                        {
-                          "name": "TYPE",
-                          "index": 2.0,
-                          "aggr": "sum"
-                        }
-                      ],
-                      "groups": [
-                        {
-                          "name": "ISFRAUD",
-                          "index": 8.0,
-                          "aggr": "sum"
-                        }
-                      ]
+                      "keys": [],
+                      "values": [],
+                      "groups": []
                     }
                   },
                   "parameterChanged": false,
@@ -28242,27 +28119,9 @@
                   },
                   "common": {
                     "pivot": {
-                      "keys": [
-                        {
-                          "name": "TYPE",
-                          "index": 2.0,
-                          "aggr": "sum"
-                        }
-                      ],
-                      "values": [
-                        {
-                          "name": "TYPE",
-                          "index": 2.0,
-                          "aggr": "sum"
-                        }
-                      ],
-                      "groups": [
-                        {
-                          "name": "ISFRAUD",
-                          "index": 8.0,
-                          "aggr": "sum"
-                        }
-                      ]
+                      "keys": [],
+                      "values": [],
+                      "groups": []
                     }
                   },
                   "parameterChanged": false,
@@ -28907,27 +28766,9 @@
                   },
                   "common": {
                     "pivot": {
-                      "keys": [
-                        {
-                          "name": "TYPE",
-                          "index": 2.0,
-                          "aggr": "sum"
-                        }
-                      ],
-                      "values": [
-                        {
-                          "name": "TYPE",
-                          "index": 2.0,
-                          "aggr": "sum"
-                        }
-                      ],
-                      "groups": [
-                        {
-                          "name": "ISFRAUD",
-                          "index": 8.0,
-                          "aggr": "sum"
-                        }
-                      ]
+                      "keys": [],
+                      "values": [],
+                      "groups": []
                     }
                   },
                   "parameterChanged": false,
@@ -30121,27 +29962,9 @@
                   },
                   "common": {
                     "pivot": {
-                      "keys": [
-                        {
-                          "name": "TYPE",
-                          "index": 2.0,
-                          "aggr": "sum"
-                        }
-                      ],
-                      "values": [
-                        {
-                          "name": "TYPE",
-                          "index": 2.0,
-                          "aggr": "sum"
-                        }
-                      ],
-                      "groups": [
-                        {
-                          "name": "ISFRAUD",
-                          "index": 8.0,
-                          "aggr": "sum"
-                        }
-                      ]
+                      "keys": [],
+                      "values": [],
+                      "groups": []
                     }
                   },
                   "parameterChanged": false,
@@ -32715,27 +32538,9 @@
                   },
                   "common": {
                     "pivot": {
-                      "keys": [
-                        {
-                          "name": "TYPE",
-                          "index": 2.0,
-                          "aggr": "sum"
-                        }
-                      ],
-                      "values": [
-                        {
-                          "name": "TYPE",
-                          "index": 2.0,
-                          "aggr": "sum"
-                        }
-                      ],
-                      "groups": [
-                        {
-                          "name": "ISFRAUD",
-                          "index": 8.0,
-                          "aggr": "sum"
-                        }
-                      ]
+                      "keys": [],
+                      "values": [],
+                      "groups": []
                     }
                   },
                   "parameterChanged": false,
@@ -34418,27 +34223,9 @@
                   },
                   "common": {
                     "pivot": {
-                      "keys": [
-                        {
-                          "name": "TYPE",
-                          "index": 2.0,
-                          "aggr": "sum"
-                        }
-                      ],
-                      "values": [
-                        {
-                          "name": "TYPE",
-                          "index": 2.0,
-                          "aggr": "sum"
-                        }
-                      ],
-                      "groups": [
-                        {
-                          "name": "ISFRAUD",
-                          "index": 8.0,
-                          "aggr": "sum"
-                        }
-                      ]
+                      "keys": [],
+                      "values": [],
+                      "groups": []
                     }
                   },
                   "parameterChanged": false,
@@ -34955,8 +34742,8 @@
       "jobName": "",
       "id": "20200609-065309_883829742",
       "dateCreated": "2020-06-09 06:53:09.000",
-      "dateStarted": "2020-06-10 13:25:56.500",
-      "dateFinished": "2020-06-10 13:25:56.577",
+      "dateStarted": "2020-06-10 17:30:40.859",
+      "dateFinished": "2020-06-10 17:30:40.930",
       "status": "FINISHED",
       "errorMessage": "",
       "progressUpdateIntervalMs": 0
@@ -34965,7 +34752,7 @@
       "title": "Use the Plotly Chart Editor",
       "text": "%python\n\nz.show(df)\n",
       "user": "",
-      "dateUpdated": "2020-06-10 13:59:58.000",
+      "dateUpdated": "2020-06-10 17:30:48.000",
       "config": {
         "selectedInterpreter": {
           "name": "python",
@@ -48317,8 +48104,8 @@
       "jobName": "",
       "id": "20200609-065309_473513535",
       "dateCreated": "2020-06-09 06:53:09.000",
-      "dateStarted": "2020-06-10 13:25:59.170",
-      "dateFinished": "2020-06-10 13:25:59.247",
+      "dateStarted": "2020-06-10 17:19:19.741",
+      "dateFinished": "2020-06-10 17:19:19.814",
       "status": "FINISHED",
       "errorMessage": "",
       "progressUpdateIntervalMs": 0
@@ -48327,7 +48114,7 @@
       "title": "Compare Fraudulent Transactions",
       "text": "%python\n\n# Use pandas groupby and filter functions to operate on dataset\nfraud_df \u003d df.groupby(\u0027ISFRAUD\u0027).filter(lambda x: (x[\u0027ISFRAUD\u0027] \u003d\u003d True).any())\n\n# Use pandas hist() function to build histograms\nfraud_df.hist(figsize\u003d(16, 20), bins\u003d50, xlabelsize\u003d8, ylabelsize\u003d8,alpha\u003d0.4)\n",
       "user": "",
-      "dateUpdated": "2020-06-10 14:00:02.000",
+      "dateUpdated": "2020-06-10 17:30:50.000",
       "config": {
         "tableHide": false,
         "editorSetting": {
@@ -48359,8 +48146,8 @@
       "jobName": "",
       "id": "20200609-065309_1425461823",
       "dateCreated": "2020-06-09 06:53:09.000",
-      "dateStarted": "2020-06-10 13:27:05.888",
-      "dateFinished": "2020-06-10 13:27:07.205",
+      "dateStarted": "2020-06-10 17:19:19.827",
+      "dateFinished": "2020-06-10 17:19:21.243",
       "status": "FINISHED",
       "errorMessage": "",
       "progressUpdateIntervalMs": 0
@@ -48369,7 +48156,7 @@
       "title": "Compare Fraudulent Transactions",
       "text": "%python\n\n# Use pandas groupby and filter functions to operate on dataset\nfraud_df \u003d df.groupby(\u0027ISFRAUD\u0027).filter(lambda x: (x[\u0027ISFRAUD\u0027] \u003d\u003d False).any())\n\n# Use pandas hist() function to build histograms\nfraud_df.hist(figsize\u003d(16, 20), bins\u003d50, xlabelsize\u003d8, ylabelsize\u003d8,alpha\u003d0.4)\n\n\n\n",
       "user": "",
-      "dateUpdated": "2020-06-10 14:00:04.000",
+      "dateUpdated": "2020-06-10 17:30:53.000",
       "config": {
         "tableHide": false,
         "editorSetting": {
@@ -48401,8 +48188,8 @@
       "jobName": "",
       "id": "20200610-053823_1436054395",
       "dateCreated": "2020-06-10 05:38:23.000",
-      "dateStarted": "2020-06-10 13:27:18.174",
-      "dateFinished": "2020-06-10 13:27:19.690",
+      "dateStarted": "2020-06-10 17:19:21.244",
+      "dateFinished": "2020-06-10 17:19:22.708",
       "status": "FINISHED",
       "errorMessage": "",
       "progressUpdateIntervalMs": 0
@@ -48411,7 +48198,7 @@
       "title": "Compare Features",
       "text": "%python\ncorrelation \u003d df.corr()\nplt.figure(figsize\u003d(15,15))\nplt.title(\u0027Correlation Matrix\u0027)\nsns.heatmap(correlation, vmax\u003d1, square\u003dTrue,annot\u003dTrue,cmap\u003d\u0027cubehelix\u0027)",
       "user": "",
-      "dateUpdated": "2020-06-10 14:00:06.000",
+      "dateUpdated": "2020-06-10 17:30:55.000",
       "config": {
         "editorSetting": {
           "language": "python",
@@ -48441,8 +48228,8 @@
       "jobName": "",
       "id": "20200609-065309_983988244",
       "dateCreated": "2020-06-09 06:53:09.000",
-      "dateStarted": "2020-06-10 13:27:52.988",
-      "dateFinished": "2020-06-10 13:27:53.700",
+      "dateStarted": "2020-06-10 17:19:22.709",
+      "dateFinished": "2020-06-10 17:19:23.425",
       "status": "FINISHED",
       "errorMessage": "",
       "progressUpdateIntervalMs": 0
@@ -48451,7 +48238,7 @@
       "title": "Data is very skewed!",
       "text": "%python\n#creating dummy variables for categorical values \n\ndum \u003d pd.get_dummies(df[\u0027TYPE\u0027])\ndf1 \u003d pd.concat([df,dum],axis\u003d1)\ndf1.drop([\u0027TYPE\u0027],axis\u003d1, inplace\u003dTrue)\n\n#checking if target class is balanced or not\n\ndf2 \u003d df1.sample(n\u003d20000)\ndf2.ISFRAUD.value_counts().plot.bar()\nprint(df2.ISFRAUD.value_counts())",
       "user": "",
-      "dateUpdated": "2020-06-10 14:00:11.000",
+      "dateUpdated": "2020-06-10 17:30:58.000",
       "config": {
         "tableHide": false,
         "editorSetting": {
@@ -48482,8 +48269,8 @@
       "jobName": "",
       "id": "20200609-065309_842955221",
       "dateCreated": "2020-06-09 06:53:09.000",
-      "dateStarted": "2020-06-10 13:28:08.783",
-      "dateFinished": "2020-06-10 13:28:09.097",
+      "dateStarted": "2020-06-10 17:19:23.426",
+      "dateFinished": "2020-06-10 17:19:23.784",
       "status": "FINISHED",
       "errorMessage": "",
       "progressUpdateIntervalMs": 0
@@ -48492,7 +48279,7 @@
       "title": "",
       "text": "%python\nprint(\u0027\u0027\u0027%html\\n\u003ch1 style\u003d\"background-color: #673191; color: white; text-align: center\"\u003e\u003cb\u003eModel and Evaluation\u003c/b\u003e\u003c/h1\u003e\u0027\u0027\u0027)",
       "user": "",
-      "dateUpdated": "2020-06-10 04:51:41.000",
+      "dateUpdated": "2020-06-10 17:19:23.000",
       "config": {
         "selectedInterpreter": {
           "name": "python",
@@ -48529,8 +48316,8 @@
       "jobName": "",
       "id": "20200609-065309_363566041",
       "dateCreated": "2020-06-09 06:53:09.000",
-      "dateStarted": "2020-06-10 04:51:41.005",
-      "dateFinished": "2020-06-10 04:51:41.149",
+      "dateStarted": "2020-06-10 17:19:23.785",
+      "dateFinished": "2020-06-10 17:19:23.842",
       "status": "FINISHED",
       "errorMessage": "",
       "progressUpdateIntervalMs": 0
@@ -48539,7 +48326,7 @@
       "title": "OverSample to Balance our Dataset",
       "text": "%python\n\n# Import libraries for OverSampling\nimport imblearn\nfrom imblearn.over_sampling import SMOTE\n\n# List of fields to use as features for training\nX \u003d df2.drop([\u0027ISFRAUD\u0027],axis\u003d1)\n\n# Value to predict (ISFRAUD)\ny \u003d df2[\u0027ISFRAUD\u0027]\n\n# Create Train / Test Split\nX_train, X_test, y_train, y_test \u003d train_test_split(X, y, test_size\u003d0.3, random_state\u003d0)\n\n# OverSample to balance dataset\nsm \u003d SMOTE(random_state\u003d10, sampling_strategy\u003d1.0)\n\n# Balanced training dataset\nx_train_res, y_train_res \u003d sm.fit_sample(X_train, y_train)",
       "user": "",
-      "dateUpdated": "2020-06-10 14:00:12.000",
+      "dateUpdated": "2020-06-10 17:31:01.000",
       "config": {
         "tableHide": false,
         "editorSetting": {
@@ -48569,8 +48356,8 @@
       "jobName": "",
       "id": "20200609-065309_413718565",
       "dateCreated": "2020-06-09 06:53:09.000",
-      "dateStarted": "2020-06-10 13:29:08.621",
-      "dateFinished": "2020-06-10 13:29:08.678",
+      "dateStarted": "2020-06-10 17:19:23.844",
+      "dateFinished": "2020-06-10 17:19:23.899",
       "status": "FINISHED",
       "errorMessage": "",
       "progressUpdateIntervalMs": 0
@@ -48579,7 +48366,7 @@
       "title": "",
       "text": "%python\n#Splitting the data into training and test\nprint()\nprint(\u0027\u0027\u0027%html\\n\u003ch4\u003eBefore OverSampling, counts of label \u00271\u0027: \u003cb\u003e\u003cspan style\u003d\"color:red;\"\u003e{0:.2f}\u003c/span\u003e\u003c/b\u003e\u003c/h4\u003e\u0027\u0027\u0027.format(sum(y_train\u003d\u003d1)))\nprint(\u0027\u0027\u0027%html\\n\u003ch4\u003eBefore OverSampling, counts of label \u00270\u0027: \u003cb\u003e\u003cspan style\u003d\"color:red;\"\u003e{0:.2f}\u003c/span\u003e\u003c/b\u003e\u003c/h4\u003e\u0027\u0027\u0027.format(sum(y_train\u003d\u003d0)))\n",
       "user": "",
-      "dateUpdated": "2020-06-10 14:00:20.000",
+      "dateUpdated": "2020-06-10 17:31:04.000",
       "config": {
         "tableHide": false,
         "editorSetting": {
@@ -48613,8 +48400,8 @@
       "jobName": "",
       "id": "20200609-065309_1483093459",
       "dateCreated": "2020-06-09 06:53:09.000",
-      "dateStarted": "2020-06-10 13:29:26.174",
-      "dateFinished": "2020-06-10 13:29:26.231",
+      "dateStarted": "2020-06-10 17:19:23.900",
+      "dateFinished": "2020-06-10 17:19:23.954",
       "status": "FINISHED",
       "errorMessage": "",
       "progressUpdateIntervalMs": 0
@@ -48623,7 +48410,7 @@
       "title": "",
       "text": "%python\nprint()\nprint(\u0027\u0027\u0027%html\\n\u003ch4\u003eAfter OverSampling, the shape of train_X: \u003cb\u003e\u003cspan style\u003d\"color:red;\"\u003e{}\u003c/span\u003e\u003c/b\u003e\u003c/h4\u003e\u0027\u0027\u0027.format(x_train_res.shape))\nprint(\u0027\u0027\u0027%html\\n\u003ch4\u003eAfter OverSampling, the shape of train_y: \u003cb\u003e\u003cspan style\u003d\"color:red;\"\u003e{}\u003c/span\u003e\u003c/b\u003e\u003c/h4\u003e\u0027\u0027\u0027.format(y_train_res.shape))",
       "user": "",
-      "dateUpdated": "2020-06-10 14:00:21.000",
+      "dateUpdated": "2020-06-10 17:31:07.000",
       "config": {
         "selectedInterpreter": {
           "name": "python",
@@ -48653,8 +48440,8 @@
       "jobName": "",
       "id": "20200609-065309_1924472780",
       "dateCreated": "2020-06-09 06:53:09.000",
-      "dateStarted": "2020-06-10 13:29:39.273",
-      "dateFinished": "2020-06-10 13:29:39.332",
+      "dateStarted": "2020-06-10 17:19:23.956",
+      "dateFinished": "2020-06-10 17:19:24.012",
       "status": "FINISHED",
       "errorMessage": "",
       "progressUpdateIntervalMs": 0
@@ -48663,7 +48450,7 @@
       "title": "",
       "text": "%python\nprint()\nprint(\u0027\u0027\u0027%html\\n\u003ch4\u003eAfter OverSampling, counts of label \u00271\u0027: \u003cb\u003e\u003cspan style\u003d\"color:red;\"\u003e{0:.2f}\u003c/span\u003e\u003c/b\u003e\u003c/h4\u003e\u0027\u0027\u0027.format(sum(y_train_res\u003d\u003d1)))\nprint(\u0027\u0027\u0027%html\\n\u003ch4\u003eAfter OverSampling, counts of label \u00270\u0027 \u003cb\u003e\u003cspan style\u003d\"color:red;\"\u003e{0:.2f}\u003c/span\u003e\u003c/b\u003e\u003c/h4\u003e\u0027\u0027\u0027.format(sum(y_train_res\u003d\u003d0)))",
       "user": "",
-      "dateUpdated": "2020-06-10 14:00:25.000",
+      "dateUpdated": "2020-06-10 17:31:09.000",
       "config": {
         "selectedInterpreter": {
           "name": "python",
@@ -48693,8 +48480,8 @@
       "jobName": "",
       "id": "20200609-065309_154575915",
       "dateCreated": "2020-06-09 06:53:09.000",
-      "dateStarted": "2020-06-10 13:29:41.133",
-      "dateFinished": "2020-06-10 13:29:41.191",
+      "dateStarted": "2020-06-10 17:19:24.014",
+      "dateFinished": "2020-06-10 17:19:24.068",
       "status": "FINISHED",
       "errorMessage": "",
       "progressUpdateIntervalMs": 0
@@ -48703,7 +48490,7 @@
       "title": "Train / Test Model (using Keras)",
       "text": "%python\n# Feature scaling \nfrom sklearn.preprocessing import StandardScaler\n\nsc \u003d StandardScaler()\nx_train_scaled \u003d sc.fit_transform(x_train_res)\nx_test_scaled \u003d sc.transform(X_test)\n\n# Initializing the model \nmodel \u003d Sequential()\n\n#Adding the input layer and the first hidden layer \nmodel.add(Dense(input_dim\u003d11, output_dim \u003d 6, init \u003d \u0027uniform\u0027, activation \u003d \u0027relu\u0027))\n\n#Adding the second hidden layer \nmodel.add(Dense(output_dim \u003d 6, init \u003d \u0027uniform\u0027, activation \u003d \u0027relu\u0027))\n\n#Adding the output layer \nmodel.add(Dense(output_dim \u003d 1, init \u003d \u0027uniform\u0027, activation \u003d \u0027sigmoid\u0027))\n\n#Compiling and fitting the model \nmodel.compile(optimizer \u003d \u0027adam\u0027, loss \u003d \u0027binary_crossentropy\u0027, metrics \u003d [\u0027accuracy\u0027])\nmodel_info \u003d model.fit(x_train_scaled, y_train_res, batch_size \u003d 10, nb_epoch \u003d 10)\n",
       "user": "",
-      "dateUpdated": "2020-06-10 14:00:28.000",
+      "dateUpdated": "2020-06-10 17:31:13.000",
       "config": {
         "tableHide": true,
         "editorSetting": {
@@ -50776,8 +50563,8 @@
       "jobName": "",
       "id": "20200609-065309_994128423",
       "dateCreated": "2020-06-09 06:53:09.000",
-      "dateStarted": "2020-06-10 13:29:45.434",
-      "dateFinished": "2020-06-10 13:30:05.228",
+      "dateStarted": "2020-06-10 17:19:24.078",
+      "dateFinished": "2020-06-10 17:19:44.812",
       "status": "FINISHED",
       "errorMessage": "",
       "progressUpdateIntervalMs": 0
@@ -50786,7 +50573,7 @@
       "title": "Visualize Accuracy / Loss",
       "text": "%python\n\n#Plotting the training curves\ndef plot_model_history(model_history):\n    fig, axs \u003d plt.subplots(1,2,figsize\u003d(15,5))\n    # summarize history for accuracy\n    axs[0].plot(range(1,len(model_history.history[\u0027accuracy\u0027])+1),model_history.history[\u0027accuracy\u0027])\n    #axs[0].plot(range(1,len(model_history.history[\u0027val_acc\u0027])+1),model_history.history[\u0027val_acc\u0027])\n    axs[0].set_title(\u0027Model Accuracy\u0027)\n    axs[0].set_ylabel(\u0027Accuracy\u0027)\n    axs[0].set_xlabel(\u0027Epoch\u0027)\n    axs[0].set_xticks(np.arange(1,len(model_history.history[\u0027accuracy\u0027])+1),len(model_history.history[\u0027accuracy\u0027])/10)\n    axs[0].legend([\u0027train\u0027, \u0027val\u0027], loc\u003d\u0027best\u0027)\n    # summarize history for loss\n    axs[1].plot(range(1,len(model_history.history[\u0027loss\u0027])+1),model_history.history[\u0027loss\u0027])\n    #axs[1].plot(range(1,len(model_history.history[\u0027val_loss\u0027])+1),model_history.history[\u0027val_loss\u0027])\n    axs[1].set_title(\u0027Model Loss\u0027)\n    axs[1].set_ylabel(\u0027Loss\u0027)\n    axs[1].set_xlabel(\u0027Epoch\u0027)\n    axs[1].set_xticks(np.arange(1,len(model_history.history[\u0027loss\u0027])+1),len(model_history.history[\u0027loss\u0027])/10)\n    axs[1].legend([\u0027train\u0027, \u0027val\u0027], loc\u003d\u0027best\u0027)\n    plt.show()\n\nplot_model_history(model_info)\n",
       "user": "",
-      "dateUpdated": "2020-06-10 14:00:33.000",
+      "dateUpdated": "2020-06-10 17:31:15.000",
       "config": {
         "tableHide": false,
         "editorSetting": {
@@ -50817,8 +50604,8 @@
       "jobName": "",
       "id": "20200609-065309_158515406",
       "dateCreated": "2020-06-09 06:53:09.000",
-      "dateStarted": "2020-06-10 13:30:55.249",
-      "dateFinished": "2020-06-10 13:30:55.611",
+      "dateStarted": "2020-06-10 17:19:44.817",
+      "dateFinished": "2020-06-10 17:19:45.179",
       "status": "FINISHED",
       "errorMessage": "",
       "progressUpdateIntervalMs": 0
@@ -50827,7 +50614,7 @@
       "title": "Visualize Prediction Results",
       "text": "%python\n\n# Predicting the test results \ny_pred \u003d model.predict_classes(x_test_scaled)\nacc \u003d accuracy_score(y_test,y_pred) * 100\n\n# Generating the Confusion matrix and Classification report\nprint(\u0027Confusion matrix\u0027, \u0027\\n\u0027, confusion_matrix(y_test, y_pred), \u0027\\n\u0027)\nprint(\u0027Classification report\u0027, \u0027\\n\u0027, classification_report(y_test, y_pred), \u0027\\n\u0027)",
       "user": "",
-      "dateUpdated": "2020-06-10 14:00:36.000",
+      "dateUpdated": "2020-06-10 17:31:18.000",
       "config": {
         "tableHide": false,
         "editorSetting": {
@@ -50857,8 +50644,8 @@
       "jobName": "",
       "id": "20200609-065309_1012851236",
       "dateCreated": "2020-06-09 06:53:09.000",
-      "dateStarted": "2020-06-10 13:31:24.768",
-      "dateFinished": "2020-06-10 13:31:24.875",
+      "dateStarted": "2020-06-10 17:19:45.183",
+      "dateFinished": "2020-06-10 17:19:45.290",
       "status": "FINISHED",
       "errorMessage": "",
       "progressUpdateIntervalMs": 0
@@ -50867,7 +50654,7 @@
       "title": "",
       "text": "%python\nprint(\u0027\u0027\u0027%html\\n\u003ch4\u003eAccuracy: \u003cb\u003e\u003cspan style\u003d\"color:red;\"\u003e{0:.2f}\u003c/span\u003e\u003c/b\u003e\u003c/h4\u003e\u0027\u0027\u0027.format( round(acc,2) ))",
       "user": "",
-      "dateUpdated": "2020-06-10 14:00:47.000",
+      "dateUpdated": "2020-06-10 17:31:26.000",
       "config": {
         "selectedInterpreter": {
           "name": "python",
@@ -50896,8 +50683,8 @@
       "jobName": "",
       "id": "20200609-065309_1650787572",
       "dateCreated": "2020-06-09 06:53:09.000",
-      "dateStarted": "2020-06-10 13:31:33.423",
-      "dateFinished": "2020-06-10 13:31:33.480",
+      "dateStarted": "2020-06-10 17:19:45.292",
+      "dateFinished": "2020-06-10 17:19:45.347",
       "status": "FINISHED",
       "errorMessage": "",
       "progressUpdateIntervalMs": 0
