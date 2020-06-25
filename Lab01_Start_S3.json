@@ -259,9 +259,9 @@
     },
     {
       "title": "Interactive Notebook Inputs",
-      "text": "%python\n# Set datasource name to be used as a variable in future paragraphs\nobject_name \u003d z.textbox(\"Object Name\",\"LAB_01_DATA.csv\")\n                                \nprint(\"Datasource:\", datasource)\n                                ",
+      "text": "%python\n# Set datasource name to be used as a variable in future paragraphs\nobject_name \u003d z.textbox(\"Object Name\",\"LAB_01_DATA.csv\")\n                                \nprint(\"Datasource:\", object_name)\n                                ",
       "user": "",
-      "dateUpdated": "2020-06-25 16:48:28.000",
+      "dateUpdated": "2020-06-25 16:56:07.000",
       "config": {
         "tableHide": false,
         "editorSetting": {
