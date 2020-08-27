@@ -2,9 +2,9 @@
   "paragraphs": [
     {
       "title": "",
-      "text": "%python\nprint(\u0027\u0027\u0027%html\\n\u003ch1 style\u003d\"background-color: #673191; color: white; text-align: center\"\u003e\u003cb\u003eSetup and Access Data\u003c/b\u003e\u003c/h1\u003e\u0027\u0027\u0027)",
+      "text": "%python \nprint(\u0027\u0027\u0027%html\\n\u003ch1 style\u003d\"background-color: #673191; color: white; text-align: center\"\u003e\u003cb\u003eSetup and Access Data\u003c/b\u003e\u003c/h1\u003e\u0027\u0027\u0027)",
       "user": "",
-      "dateUpdated": "2020-08-27 16:38:44.000",
+      "dateUpdated": "2020-08-27 16:56:44.000",
       "config": {
         "tableHide": false,
         "editorSetting": {
@@ -42,8 +42,8 @@
       "jobName": "",
       "id": "20200625-151955_439329924",
       "dateCreated": "2020-06-25 15:19:55.000",
-      "dateStarted": "2020-08-27 16:38:41.745",
-      "dateFinished": "2020-08-27 16:38:41.810",
+      "dateStarted": "2020-08-27 16:56:41.646",
+      "dateFinished": "2020-08-27 16:56:41.711",
       "status": "FINISHED",
       "errorMessage": "",
       "progressUpdateIntervalMs": 0
@@ -261,7 +261,7 @@
       "title": "Interactive Notebook Inputs",
       "text": "%python\n# Set datasource name to be used as a variable in future paragraphs\nobject_name \u003d z.textbox(\"Object Name\",\"LAB_01_DATA.csv\")\n                                \nprint(\"Datasource:\", object_name)\n                                ",
       "user": "",
-      "dateUpdated": "2020-06-25 16:56:07.000",
+      "dateUpdated": "2020-06-25 16:59:16.000",
       "config": {
         "tableHide": false,
         "editorSetting": {
@@ -277,7 +277,7 @@
           "isDefault": false
         },
         "colWidth": 12.0,
-        "editorHide": true,
+        "editorHide": false,
         "title": true,
         "results": [
           {}
@@ -340,9 +340,9 @@
     },
     {
       "title": "Connect to S3 (Sample)",
-      "text": "\u0027\u0027\u0027\n# Connect to S3 data source\nbucket \u003d z.getDatasource(\"\u003cData Source Name\u003e\")\n\n# Connect to Titanic csv file from the desired S3 bucket\ndata \u003d bucket.Object(\"LAB_O1_DATA.csv\")\n\ndata.download_file(\"./LAB_O1_DATA.csv\" )\n\u0027\u0027\u0027\n",
+      "text": "%python\n\"\"\"\n# Connect to S3 data source\nbucket \u003d z.getDatasource(\"\u003cData Source Name\u003e\")\n\n# Connect to Titanic csv file from the desired S3 bucket\ndata \u003d bucket.Object(\"LAB_O1_DATA.csv\")\n\ndata.download_file(\"./LAB_O1_DATA.csv\" )\n\"\"\"\n",
       "user": "",
-      "dateUpdated": "2020-06-25 16:44:58.000",
+      "dateUpdated": "2020-08-27 16:57:39.000",
       "config": {
         "selectedInterpreter": {
           "name": "python",
@@ -370,8 +370,8 @@
       "jobName": "",
       "id": "20200625-151955_1023223395",
       "dateCreated": "2020-06-25 15:19:55.000",
-      "dateStarted": "2020-06-24 22:26:01.567",
-      "dateFinished": "2020-06-24 22:26:02.378",
+      "dateStarted": "2020-08-27 16:57:34.475",
+      "dateFinished": "2020-08-27 16:57:34.554",
       "status": "FINISHED",
       "errorMessage": "",
       "progressUpdateIntervalMs": 0
@@ -11951,7 +11951,7 @@
       "title": "",
       "text": "%python\nprint(\u0027\u0027\u0027%html\\n\u003ch1 style\u003d\"background-color: #673191; color: white; text-align: center\"\u003e\u003cb\u003eVisualize Data\u003c/b\u003e\u003c/h1\u003e\u0027\u0027\u0027)",
       "user": "",
-      "dateUpdated": "2020-08-27 16:38:47.000",
+      "dateUpdated": "2020-06-25 15:19:55.000",
       "config": {
         "selectedInterpreter": {
           "name": "python",
@@ -11959,7 +11959,7 @@
           "isCustom": false,
           "editorLanguage": "python",
           "className": "org.apache.zeppelin.python.PythonInterpreter",
-          "isDefault": false
+          "isDefault": true
         },
         "colWidth": 12.0,
         "editorHide": true,
@@ -37117,7 +37117,7 @@
       "title": "",
       "text": "%python\nprint(\u0027\u0027\u0027%html\\n\u003ch1 style\u003d\"background-color: #673191; color: white; text-align: center\"\u003e\u003cb\u003eModel and Evaluation\u003c/b\u003e\u003c/h1\u003e\u0027\u0027\u0027)",
       "user": "",
-      "dateUpdated": "2020-08-27 16:38:53.000",
+      "dateUpdated": "2020-06-25 15:19:55.000",
       "config": {
         "selectedInterpreter": {
           "name": "python",
@@ -37125,7 +37125,7 @@
           "isCustom": false,
           "editorLanguage": "python",
           "className": "org.apache.zeppelin.python.PythonInterpreter",
-          "isDefault": false
+          "isDefault": true
         },
         "colWidth": 12.0,
         "editorHide": true,
@@ -39411,7 +39411,7 @@
       "title": "Visualize Accuracy / Loss",
       "text": "%python\n\n#Plotting the training curves\ndef plot_model_history(model_history):\n    fig, axs \u003d plt.subplots(1,2,figsize\u003d(15,5))\n    # summarize history for accuracy\n    axs[0].plot(range(1,len(model_history.history[\u0027accuracy\u0027])+1),model_history.history[\u0027accuracy\u0027])\n    #axs[0].plot(range(1,len(model_history.history[\u0027val_acc\u0027])+1),model_history.history[\u0027val_acc\u0027])\n    axs[0].set_title(\u0027Model Accuracy\u0027)\n    axs[0].set_ylabel(\u0027Accuracy\u0027)\n    axs[0].set_xlabel(\u0027Epoch\u0027)\n    axs[0].set_xticks(np.arange(1,len(model_history.history[\u0027accuracy\u0027])+1),len(model_history.history[\u0027accuracy\u0027])/10)\n    axs[0].legend([\u0027train\u0027, \u0027val\u0027], loc\u003d\u0027best\u0027)\n    # summarize history for loss\n    axs[1].plot(range(1,len(model_history.history[\u0027loss\u0027])+1),model_history.history[\u0027loss\u0027])\n    #axs[1].plot(range(1,len(model_history.history[\u0027val_loss\u0027])+1),model_history.history[\u0027val_loss\u0027])\n    axs[1].set_title(\u0027Model Loss\u0027)\n    axs[1].set_ylabel(\u0027Loss\u0027)\n    axs[1].set_xlabel(\u0027Epoch\u0027)\n    axs[1].set_xticks(np.arange(1,len(model_history.history[\u0027loss\u0027])+1),len(model_history.history[\u0027loss\u0027])/10)\n    axs[1].legend([\u0027train\u0027, \u0027val\u0027], loc\u003d\u0027best\u0027)\n    plt.show()\n\nplot_model_history(model_info)\n",
       "user": "",
-      "dateUpdated": "2020-08-27 16:38:58.000",
+      "dateUpdated": "2020-06-25 15:19:55.000",
       "config": {
         "tableHide": false,
         "editorSetting": {
@@ -39424,7 +39424,7 @@
           "isCustom": false,
           "editorLanguage": "python",
           "className": "org.apache.zeppelin.python.PythonInterpreter",
-          "isDefault": false
+          "isDefault": true
         },
         "colWidth": 6.0,
         "editorHide": true,
