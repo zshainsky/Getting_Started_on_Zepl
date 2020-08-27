@@ -2,14 +2,14 @@
   "paragraphs": [
     {
       "title": "",
-      "text": "\u003ch1 style\u003d\"background-color: #673191; color: white; text-align: center\"\u003e\u003cb\u003eSetup and Access Data\u003c/b\u003e\u003c/h1\u003e",
+      "text": "%python\nprint(\u0027\u0027\u0027%html\\n\u003ch1 style\u003d\"background-color: #673191; color: white; text-align: center\"\u003e\u003cb\u003eSetup and Access Data\u003c/b\u003e\u003c/h1\u003e\u0027\u0027\u0027)",
       "user": "",
-      "dateUpdated": "2020-06-25 15:19:55.000",
+      "dateUpdated": "2020-08-27 16:38:44.000",
       "config": {
         "tableHide": false,
         "editorSetting": {
-          "language": "markdown",
-          "editOnDblClick": true
+          "language": "python",
+          "editOnDblClick": false
         },
         "selectedInterpreter": {
           "name": "python",
@@ -17,7 +17,7 @@
           "isCustom": false,
           "editorLanguage": "python",
           "className": "org.apache.zeppelin.python.PythonInterpreter",
-          "isDefault": true
+          "isDefault": false
         },
         "colWidth": 12.0,
         "editorHide": true,
@@ -33,7 +33,7 @@
         "code": "SUCCESS",
         "msg": [
           {
-            "data": "\u003cdiv class\u003d\"markdown-body\"\u003e\n\u003ch1 style\u003d\"background-color: #673191; color: white; text-align: center\"\u003e\u003cb\u003eSetup and Access Data\u003c/b\u003e\u003c/h1\u003e\n\u003c/div\u003e",
+            "data": "\u003ch1 style\u003d\"background-color: #673191; color: white; text-align: center\"\u003e\u003cb\u003eSetup and Access Data\u003c/b\u003e\u003c/h1\u003e\n",
             "type": "HTML"
           }
         ]
@@ -42,8 +42,8 @@
       "jobName": "",
       "id": "20200625-151955_439329924",
       "dateCreated": "2020-06-25 15:19:55.000",
-      "dateStarted": "2020-06-10 17:29:52.106",
-      "dateFinished": "2020-06-10 17:29:52.107",
+      "dateStarted": "2020-08-27 16:38:41.745",
+      "dateFinished": "2020-08-27 16:38:41.810",
       "status": "FINISHED",
       "errorMessage": "",
       "progressUpdateIntervalMs": 0
@@ -11948,50 +11948,10 @@
       "progressUpdateIntervalMs": 0
     },
     {
-      "title": "In case of emergency break glass",
-      "text": "%python\nurl \u003d \"http://zdata/LAB_01_DATA.csv\"\ndf \u003d pd.read_csv(url)",
-      "user": "",
-      "dateUpdated": "2020-06-25 15:19:55.000",
-      "config": {
-        "tableHide": true,
-        "editorSetting": {
-          "language": "python",
-          "editOnDblClick": false
-        },
-        "selectedInterpreter": {
-          "name": "python",
-          "profile": "python",
-          "isCustom": false,
-          "editorLanguage": "python",
-          "className": "org.apache.zeppelin.python.PythonInterpreter",
-          "isDefault": true
-        },
-        "colWidth": 12.0,
-        "editorHide": true,
-        "title": true,
-        "results": [
-          {}
-        ]
-      },
-      "settings": {
-        "params": {},
-        "forms": {}
-      },
-      "apps": [],
-      "jobName": "",
-      "id": "20200625-151955_1594958901",
-      "dateCreated": "2020-06-25 15:19:55.000",
-      "dateStarted": "2020-06-10 17:19:18.635",
-      "dateFinished": "2020-06-10 17:19:19.143",
-      "status": "ERROR",
-      "errorMessage": "",
-      "progressUpdateIntervalMs": 0
-    },
-    {
       "title": "",
       "text": "%python\nprint(\u0027\u0027\u0027%html\\n\u003ch1 style\u003d\"background-color: #673191; color: white; text-align: center\"\u003e\u003cb\u003eVisualize Data\u003c/b\u003e\u003c/h1\u003e\u0027\u0027\u0027)",
       "user": "",
-      "dateUpdated": "2020-06-25 15:19:55.000",
+      "dateUpdated": "2020-08-27 16:38:47.000",
       "config": {
         "selectedInterpreter": {
           "name": "python",
@@ -11999,7 +11959,7 @@
           "isCustom": false,
           "editorLanguage": "python",
           "className": "org.apache.zeppelin.python.PythonInterpreter",
-          "isDefault": true
+          "isDefault": false
         },
         "colWidth": 12.0,
         "editorHide": true,
@@ -37157,7 +37117,7 @@
       "title": "",
       "text": "%python\nprint(\u0027\u0027\u0027%html\\n\u003ch1 style\u003d\"background-color: #673191; color: white; text-align: center\"\u003e\u003cb\u003eModel and Evaluation\u003c/b\u003e\u003c/h1\u003e\u0027\u0027\u0027)",
       "user": "",
-      "dateUpdated": "2020-06-25 15:19:55.000",
+      "dateUpdated": "2020-08-27 16:38:53.000",
       "config": {
         "selectedInterpreter": {
           "name": "python",
@@ -37165,7 +37125,7 @@
           "isCustom": false,
           "editorLanguage": "python",
           "className": "org.apache.zeppelin.python.PythonInterpreter",
-          "isDefault": true
+          "isDefault": false
         },
         "colWidth": 12.0,
         "editorHide": true,
@@ -39451,7 +39411,7 @@
       "title": "Visualize Accuracy / Loss",
       "text": "%python\n\n#Plotting the training curves\ndef plot_model_history(model_history):\n    fig, axs \u003d plt.subplots(1,2,figsize\u003d(15,5))\n    # summarize history for accuracy\n    axs[0].plot(range(1,len(model_history.history[\u0027accuracy\u0027])+1),model_history.history[\u0027accuracy\u0027])\n    #axs[0].plot(range(1,len(model_history.history[\u0027val_acc\u0027])+1),model_history.history[\u0027val_acc\u0027])\n    axs[0].set_title(\u0027Model Accuracy\u0027)\n    axs[0].set_ylabel(\u0027Accuracy\u0027)\n    axs[0].set_xlabel(\u0027Epoch\u0027)\n    axs[0].set_xticks(np.arange(1,len(model_history.history[\u0027accuracy\u0027])+1),len(model_history.history[\u0027accuracy\u0027])/10)\n    axs[0].legend([\u0027train\u0027, \u0027val\u0027], loc\u003d\u0027best\u0027)\n    # summarize history for loss\n    axs[1].plot(range(1,len(model_history.history[\u0027loss\u0027])+1),model_history.history[\u0027loss\u0027])\n    #axs[1].plot(range(1,len(model_history.history[\u0027val_loss\u0027])+1),model_history.history[\u0027val_loss\u0027])\n    axs[1].set_title(\u0027Model Loss\u0027)\n    axs[1].set_ylabel(\u0027Loss\u0027)\n    axs[1].set_xlabel(\u0027Epoch\u0027)\n    axs[1].set_xticks(np.arange(1,len(model_history.history[\u0027loss\u0027])+1),len(model_history.history[\u0027loss\u0027])/10)\n    axs[1].legend([\u0027train\u0027, \u0027val\u0027], loc\u003d\u0027best\u0027)\n    plt.show()\n\nplot_model_history(model_info)\n",
       "user": "",
-      "dateUpdated": "2020-06-25 15:19:55.000",
+      "dateUpdated": "2020-08-27 16:38:58.000",
       "config": {
         "tableHide": false,
         "editorSetting": {
@@ -39464,7 +39424,7 @@
           "isCustom": false,
           "editorLanguage": "python",
           "className": "org.apache.zeppelin.python.PythonInterpreter",
-          "isDefault": true
+          "isDefault": false
         },
         "colWidth": 6.0,
         "editorHide": true,
