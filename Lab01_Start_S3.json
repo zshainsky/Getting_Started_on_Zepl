@@ -37064,7 +37064,7 @@
     },
     {
       "title": "OverSample to Balance our Dataset",
-      "text": "%python\n\n# Import libraries for OverSampling\nimport imblearn\nfrom imblearn.over_sampling import SMOTE\n\n# List of fields to use as features for training\nX \u003d df2.drop([\u0027ISFRAUD\u0027],axis\u003d1)\n\n# Value to predict (ISFRAUD)\ny \u003d df2[\u0027ISFRAUD\u0027]\n\n# Create Train / Test Split\nX_train, X_test, y_train, y_test \u003d train_test_split(X, y, test_size\u003d0.3, random_state\u003d0)\n\n# OverSample to balance dataset\nsm \u003d SMOTE(random_state\u003d10, sampling_strategy\u003d1.0)\n\n# Balanced training dataset\nx_train_res, y_train_res \u003d sm.fit_sample(X_train, y_train)",
+      "text": "%python\n\n# Import libraries for OverSampling\nimport imblearn\nfrom imblearn.over_sampling import SMOTE\n\n# List of fields to use as features for training\nX \u003d df2.drop([\u0027ISFRAUD\u0027],axis\u003d1)\n\n# Value to predict (ISFRAUD)\ny \u003d df2[\u0027ISFRAUD\u0027]\n\n# Create Train / Test Split\nX_train, X_test, y_train, y_test \u003d train_test_split(X, y, test_size\u003d0.3, random_state\u003d0)\n\n# OverSample to balance dataset\nsm \u003d SMOTE(random_state\u003d10, sampling_strategy\u003d1.0, k_neighbors\u003d4)\n\n# Balanced training dataset\nx_train_res, y_train_res \u003d sm.fit_sample(X_train, y_train)",
       "user": "",
       "dateUpdated": "2020-11-11 22:11:25.000",
       "config": {
@@ -37079,7 +37079,7 @@
           "isCustom": false,
           "editorLanguage": "python",
           "className": "org.apache.zeppelin.python.PythonInterpreter",
-          "isDefault": true
+          "isDefault": false
         },
         "colWidth": 12.0,
         "editorHide": false,
